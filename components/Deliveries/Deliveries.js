@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import {View,Text,Button,TouchableOpacity} from 'react-native';
 
+import globalCss from '../../styles/styles';
+import FloatingButton from '../UI/FloatingButton/FloatingButton';
+
 export default class Deliveries extends Component{
 
     static navigationOptions = ({navigation}) => {
@@ -18,8 +21,8 @@ export default class Deliveries extends Component{
 
   render(){
       return (
-          <View>
-              <Text>Deliveries</Text>
+          <View style={globalCss.container}>
+              <FloatingButton />
           </View>
       );
   }  

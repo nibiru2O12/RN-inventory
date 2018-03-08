@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
-import {View,Text,Button,TouchableOpacity} from 'react-native';
+import {View,Text,Button,TouchableOpacity,StyleSheet} from 'react-native';
+
+import globalCss from '../../styles/styles';
+
+import FloatingButton from '../UI/FloatingButton/FloatingButton';
 
 export default class PurchaseOrders extends Component{
 
@@ -18,8 +22,8 @@ export default class PurchaseOrders extends Component{
 
   render(){
       return (
-          <View>
-              <Text>PurchaseOrders</Text>
+          <View style={globalCss.container}>
+              <FloatingButton />
           </View>
       );
   }  
